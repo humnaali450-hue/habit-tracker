@@ -1,9 +1,15 @@
-// Habit Tracker – Day 1
-// Logic will be added on Day 2
+const habitInput = document.getElementById("habitInput");
+const addHabitBtn = document.getElementById("addHabitBtn");
+const habitList = document.getElementById("habitList");
 
-const habitInput = document.querySelector("input");
-const addHabitBtn = document.querySelector("button");
-const habitList = document.querySelector(".habit-list");
+addHabitBtn.addEventListener("click", () => {
+  const habitText = habitInput.value.trim();
 
-// Just a test log to confirm JS is linked
-console.log("Habit Tracker JS connected");
+  if (habitText === "") return;
+
+  const li = document.createElement("li");
+  li.textContent = habitText;
+
+  habitList.appendChild(li);
+  habitInput.value = "";
+});

@@ -14,11 +14,11 @@ body {
 }
 
 .container {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   width: 320px;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -29,6 +29,7 @@ h1 {
 .input-group {
   display: flex;
   gap: 8px;
+  margin-bottom: 15px;
 }
 
 .input-group input {
@@ -39,9 +40,19 @@ h1 {
 .input-group button {
   padding: 8px 12px;
   cursor: pointer;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 4px;
 }
 
 .habit-list {
-  margin-top: 15px;
   list-style: none;
+}
+
+.habit-list li {
+  padding: 8px;
+  background: #eef1f4;
+  margin-bottom: 6px;
+  border-radius: 4px;
 }
