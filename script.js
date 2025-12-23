@@ -2,13 +2,13 @@ const habitInput = document.getElementById("habitInput");
 const addHabitBtn = document.getElementById("addHabitBtn");
 const habitList = document.getElementById("habitList");
 
-// Load habits from localStorage
+
 let habits = JSON.parse(localStorage.getItem("habits")) || [];
 
-// Render habits on page load
+
 renderHabits();
 
-// Add new habit
+
 addHabitBtn.addEventListener("click", () => {
   const habitText = habitInput.value.trim();
 
@@ -27,12 +27,12 @@ addHabitBtn.addEventListener("click", () => {
   renderHabits();
 });
 
-// Save to localStorage
+
 function saveHabits() {
   localStorage.setItem("habits", JSON.stringify(habits));
 }
 
-// Render habit list
+
 function renderHabits() {
   habitList.innerHTML = "";
 
